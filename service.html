@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Sabmeith</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <style>
+       th, td{
+            font-size:10px!important;
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-info p-0">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <img class="rounded-circle me-2" width="60" height="60" src="assets/img/logo.jpeg">
+                    <div class="sidebar-brand-text mx-3"><span>Sabmeith</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-store-alt"></i><span>Workstore</span></a><a class="nav-link active" href="orders.html"><i class="fa fa-first-order"></i><span>Car Orders</span></a></li>
+<li class="nav-item"><a class="nav-link" href="received.html"><i class="fa fa-first-order"></i><span>Tyres</span></a></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                        <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
+                            <div class="input-group"></div>
+                        </form>
+                    </div>
+                </nav>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="btn-group" role="group"></div>
+                        </div>
+                        <div class="col"><input class="bg-light border-0 small" type="text" placeholder="Search for ..."><button class="btn btn-info py-0" type="button"><i class="fas fa-search"></i></button></div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 text-nowrap">
+                                    <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable"></div>
+                                    <div class="text-uppercase text-info fw-bold text-xs mb-1" style="font-size: 20;"><span style="font-size: 20px;">Car orders</span></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-md-end dataTables_filter" id="dataTable_filter"><label class="form-label"></label></div>
+                                </div>
+                            </div>
+                            <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
+                                <table class="table my-0" id="dataTable">
+                                    <thead>
+                                        <tr>
+                                            <th>Date Job<br>Card Opened</th>
+                                            <th>Job<br>Card NO</th>
+                                            <th>Vehicle NO</th>
+                                            <th>Problem Reported</th>
+                                            <th>Mechanic Allocated</th>
+                                            <th>Item Used</th>
+                                            <th>Vehicle Make</th>
+                                            <th>Account Chargeble</th>
+                                            <th>Authorized By</th>
+                                            <th class="text-lg">Total Cost</th>
+                                            <th>Date Job Completed</th>
+                                            <th>Total Down Time HRS</th>
+                                            <th>Current status(Active, Cancelled,Completed)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2024-04-01</td>
+                                            <td>00236</td>
+                                            <td>T720 BKZ/T323 DDQ</td>
+                                            <td>Check trailer, tyres, doors,dashboard</td>
+                                            <td>Khalfan</td>
+                                            <td>1 Brake Pad<br>
+                                                3 pcs stud for dif<br>
+                                                1 pc rope wire terius<br>
+                                            </td>
+                                            <td>G440</td>
+                                            <td>Aziz H Hussein</td>
+                                            <td>Feisal Malik</td>
+                                            <td>180,000<br>
+                                                256,0000<br>
+                                                315,000<br>
+                                            </td>
+                                            <td>2024-04-04</td>
+                                            <td>32 hrs</td>
+                                            <td>Completed</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr></tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>Copyright © Brand 2024</span></div>
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
